@@ -1,0 +1,41 @@
+.header {
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.inner {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.logoAccent {
+  color: var(--color-primary);
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.navLink {
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.navLink:hover {
+  color: var(--color-primary-hover);
+}
+
+.navLinkActive {
+  font-weight: 700;
+  color: var(--color-text);
+}

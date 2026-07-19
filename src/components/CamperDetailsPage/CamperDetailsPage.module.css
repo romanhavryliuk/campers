@@ -1,0 +1,68 @@
+.page {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.grid {
+  display: grid;
+  /* minmax(0, 1fr) замість голого 1fr: інакше галерея на Swiper всередині
+     grid-колонки може роздути її ширину до мільйонів пікселів і сплюснути
+     другу колонку до 0 (класичний grid blowout) */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.leftCol,
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  min-width: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.name {
+  margin: 0;
+  font-size: 28px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.rating,
+.location {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.star {
+  color: var(--color-rating);
+}
+
+.price {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.description {
+  margin: 0;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
